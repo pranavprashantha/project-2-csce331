@@ -1,0 +1,4 @@
+SELECT count AS orders, weeks
+FROM orders
+WHERE weeks = 1
+GROUP BY weeks;
