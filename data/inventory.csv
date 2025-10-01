@@ -1,53 +1,21 @@
-drink_id,price,name,ingredient_id,ingredient_qty
-0,5.80,Classic Milk Tea,1,10
-0,5.80,Classic Milk Tea,17,10
-0,5.80,Classic Milk Tea,18,10
-0,5.80,Classic Milk Tea,20,10
-1,6.00,Jasmine Milk Tea,2,10
-1,6.00,Jasmine Milk Tea,17,10
-1,6.00,Jasmine Milk Tea,18,10
-2,6.50,Chai Milk Tea,3,10
-2,6.50,Chai Milk Tea,17,10
-2,6.50,Chai Milk Tea,18,10
-3,6.25,Vanilla Chai Milk Tea,3,10
-3,6.25,Vanilla Chai Milk Tea,4,10
-3,6.25,Vanilla Chai Milk Tea,17,10
-3,6.25,Vanilla Chai Milk Tea,18,10
-4,6.25,Coconut Milk Tea,5,10
-4,6.25,Coconut Milk Tea,17,10
-4,6.25,Coconut Milk Tea,18,10
-5,6.75,Matcha Milk Tea,6,10
-5,6.75,Matcha Milk Tea,17,10
-5,6.75,Matcha Milk Tea,19,10
-6,5.80,Red Bean Matcha,6,10
-6,5.80,Red Bean Matcha,7,10
-6,5.80,Red Bean Matcha,17,10
-6,5.80,Red Bean Matcha,19,10
-7,6.25,Oolong Milk Tea,8,10
-7,6.25,Oolong Milk Tea,17,10
-7,6.25,Oolong Milk Tea,18,10
-8,5.20,Taro Milk Tea,9,10
-8,5.20,Taro Milk Tea,17,10
-8,5.20,Taro Milk Tea,18,10
-9,5.80,Thai Milk Tea,10,10
-9,5.80,Thai Milk Tea,17,10
-9,5.80,Thai Milk Tea,18,10
-10,6.00,Thai Coffee Milk Tea,10,10
-10,6.00,Thai Coffee Milk Tea,11,10
-10,6.00,Thai Coffee Milk Tea,17,10
-10,6.00,Thai Coffee Milk Tea,18,10
-11,5.80,Salted Caramel Thai Tea,10,10
-11,5.80,Salted Caramel Thai Tea,12,10
-11,5.80,Salted Caramel Thai Tea,17,10
-11,5.80,Salted Caramel Thai Tea,18,10
-12,5.80,Honeydew Milk Drink,13,10
-12,5.80,Honeydew Milk Drink,17,10
-12,5.80,Honeydew Milk Drink,18,10
-13,6.25,Ice Cream Coffee,11,10
-13,6.25,Ice Cream Coffee,14,10
-13,6.25,Ice Cream Coffee,18,10
-14,6.25,House Black Coffee,15,10
-15,6.75,Mocha Coffee,11,10
-15,6.75,Mocha Coffee,16,10
-15,6.75,Mocha Coffee,17,10
-15,6.75,Mocha Coffee,18,10
+ingredient_id,name,unit,unit_price,stock,recommended_stock
+1,Milk Tea,oz,0.15,500,600
+2,Jasmine Green Tea,oz,0.18,400,500
+3,Chai Tea,oz,0.20,350,450
+4,Vanilla,syrup_pump,0.25,200,250
+5,Coconut Flavored Black Tea,oz,0.18,300,400
+6,Matcha Green Tea,oz,0.30,250,350
+7,Red Beans,oz,0.10,180,250
+8,Oolong Tea,oz,0.20,280,350
+9,Taro Flavored Beverage,oz,0.22,260,350
+10,Thai Tea,oz,0.18,420,500
+11,Coffee,oz,0.20,500,600
+12,Salted Caramel,syrup_pump,0.25,220,300
+13,Honeydew Flavored Beverage,oz,0.22,240,350
+14,Vanilla Ice Cream,scoop,0.75,150,200
+15,Black Coffee,oz,0.15,480,600
+16,Mocha Flavor,syrup_pump,0.28,210,300
+17,Sweetener,pump,0.05,800,1000
+18,Creamer,oz,0.08,700,900
+19,Half and Half,oz,0.12,300,400
+20,Boba,tbsp,0.12,600,800
