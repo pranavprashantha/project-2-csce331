@@ -1,5 +1,5 @@
 --Top 10 most expensive drinks
 SELECT name, price
-FROM drinks
+FROM drink
 ORDER BY price DESC
 LIMIT 10;
