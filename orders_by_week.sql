@@ -1,3 +1,4 @@
+-- See sales grouped by week
 SELECT 
     week, SUM(price)
 FROM orders
