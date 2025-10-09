@@ -3,9 +3,7 @@
 ## Prereqs
 - JDK 21 (Temurin recommended)
 
-## Run (no Maven install needed)
-Windows:
-```powershell
+## Run for Windows
 .\mvnw clean package
 .\mvnw javafx:run
 
