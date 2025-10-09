@@ -47,7 +47,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -71,7 +71,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -95,7 +95,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -119,7 +119,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -143,7 +143,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -167,7 +167,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -191,7 +191,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -215,7 +215,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -239,7 +239,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -263,7 +263,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -287,7 +287,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -311,7 +311,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -335,7 +335,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -359,7 +359,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -383,7 +383,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
@@ -407,7 +407,7 @@
                         </Rectangle>
                         <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/milk-tea.png" />
+                              <Image url="@/images/milk-tea.png" />
                            </image>
                         </ImageView>
                         <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
