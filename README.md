@@ -4,9 +4,9 @@
 - JDK 21 (Temurin recommended)
 
 ## Run for Windows
-.\mvnw clean package
+.\mvnw clean package<br>
 .\mvnw javafx:run
 
 ## For Mac
-./mvnw clean package
+./mvnw clean package<br>
 ./mvnw javafx:run
