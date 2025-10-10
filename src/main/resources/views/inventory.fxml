@@ -5,50 +5,52 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InventoryController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InventoryController">
    <children>
-      <Button layoutX="-5.0" layoutY="352.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="47.0" prefWidth="198.0" text="Checkout" />
-      <Button layoutX="194.0" layoutY="352.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="47.0" prefWidth="207.0" text="Order History" />
-      <Button layoutX="401.0" layoutY="352.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="47.0" prefWidth="198.0" style="-fx-background-color: white;" text="Inventory" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="296.0" layoutX="186.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="413.0" />
+      <Button layoutY="360.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Checkout" />
+      <Button layoutX="200.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Order History" />
+      <Button layoutX="400.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Inventory" />
       <Label alignment="CENTER" prefHeight="70.0" prefWidth="185.0" style="-fx-background-color: lightgrey;" text="Last 3 Orders" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" prefHeight="70.0" prefWidth="232.0" text="Inventory Level Recommendations" />
-      <Label alignment="CENTER" layoutX="414.0" prefHeight="70.0" prefWidth="185.0" style="-fx-background-color: lightgrey;" text="Prior Supply Reorders" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="71.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="118.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="166.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="213.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="257.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="304.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
-      <Button layoutX="278.0" layoutY="71.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="Restock Required (15)" textFill="#ff0d00" />
-      <Button layoutX="278.0" layoutY="118.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="Restock Required (3)" textFill="#ff0d00" />
-      <Button layoutX="278.0" layoutY="166.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="In Stock (12)" textFill="#209e2a" />
-      <Button layoutX="278.0" layoutY="213.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="Low Stock (2)" textFill="#ffa41a" />
-      <Button layoutX="278.0" layoutY="257.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="In Stock (11)" textFill="#209e2a" />
-      <Button layoutX="278.0" layoutY="304.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="Restock Required (5)" textFill="#ff0d00" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="71.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Tapioca" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="118.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Strawberries" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="166.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Brown Sugar" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="213.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Green Tea" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="257.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Milk" />
-      <Label alignment="CENTER" layoutX="186.0" layoutY="304.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Ice" />
-      <ImageView fitHeight="80.0" fitWidth="70.0" layoutX="58.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <Label alignment="CENTER" layoutX="415.0" prefHeight="70.0" prefWidth="185.0" style="-fx-background-color: lightgrey;" text="Prior Supply Reorders" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="72.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="120.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="168.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="216.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="264.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Label alignment="CENTER" layoutX="414.0" layoutY="312.0" prefHeight="47.0" prefWidth="185.0" style="-fx-background-color: white;" text="Last Order: August 5, 2025" />
+      <Button layoutX="278.0" layoutY="74.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="Restock Required (15)" textFill="#ff0d00" />
+      <Button layoutX="278.0" layoutY="122.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="Restock Required (3)" textFill="#ff0d00" />
+      <Button layoutX="278.0" layoutY="170.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="In Stock (12)" textFill="#209e2a" />
+      <Button layoutX="278.0" layoutY="218.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="Low Stock (2)" textFill="#ffa41a" />
+      <Button layoutX="278.0" layoutY="266.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="In Stock (11)" textFill="#209e2a" />
+      <Button layoutX="278.0" layoutY="314.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" text="Restock Required (5)" textFill="#ff0d00" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="72.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Tapioca" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="120.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Strawberries" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="168.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Brown Sugar" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="217.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Green Tea" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="264.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Milk" />
+      <Label alignment="CENTER" layoutX="186.0" layoutY="312.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: white;" text="Ice" />
+      <Label alignment="CENTER" layoutX="16.0" layoutY="331.0" prefHeight="17.0" prefWidth="150.0" text="Honeydew Milk" textAlignment="CENTER" />
+      <ImageView fitHeight="80.0" fitWidth="58.0" layoutX="61.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/Honeydew-Melon-Milk-Tea-Boba-13-removebg-preview.png" />
+            <Image url="@../images/honeydew.png" />
          </image>
       </ImageView>
-      <Label layoutX="40.0" layoutY="142.0" text="Honeydew Boba Tea" />
-      <ImageView fitHeight="70.0" fitWidth="84.0" layoutX="59.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="80.0" fitWidth="58.0" layoutX="59.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/strawberry-boba-6-removebg-preview.png" />
+            <Image url="@../images/thai.png" />
          </image>
       </ImageView>
-      <Label layoutX="40.0" layoutY="237.0" prefHeight="17.0" prefWidth="119.0" text="Strawberry Boba Tea" />
-      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="58.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="80.0" fitWidth="58.0" layoutX="59.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/BigTrain_Boba_Photoshoot_SaltedThaiTea_046_1_1000x-removebg-preview.png" />
+            <Image url="@../images/milk.png" />
          </image>
       </ImageView>
-      <Label layoutX="51.0" layoutY="328.0" prefHeight="17.0" prefWidth="119.0" text="Thai Tea Boba" />
+      <Label alignment="CENTER" layoutX="16.0" layoutY="231.0" prefHeight="17.0" prefWidth="150.0" text="Thai Milk Tea" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="12.0" layoutY="141.0" prefHeight="17.0" prefWidth="150.0" text="Classic Milk Tea" textAlignment="CENTER" />
    </children>
 </Pane>

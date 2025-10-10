@@ -4,32 +4,34 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DrinkModifyController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DrinkModifyController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
+            <Rectangle fill="WHITE" height="44.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
             <Label layoutX="253.0" layoutY="14.0" text="Drink Name Price" />
-            <Button layoutX="505.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="95.0" text="Add" />
-            <Label layoutX="109.0" layoutY="51.0" text="Ice Level Choose One" />
+            <Button layoutX="505.0" layoutY="1.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="95.0" style="-fx-background-radius: 0; -fx-background-color: #707070; -fx-border-color: 1;" text="Add" textFill="WHITE" />
+            <Label layoutX="134.0" layoutY="56.0" text="Ice Level Choose One" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="390.0" prefWidth="603.0">
          <children>
-            <Button layoutY="283.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="44.0" prefWidth="200.0" text="Checkout" />
-            <Button layoutX="199.0" layoutY="283.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="44.0" prefWidth="216.0" text="Order History" />
-            <Button layoutX="415.0" layoutY="283.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="44.0" prefWidth="188.0" text="Inventory" />
-            <Button layoutX="111.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Regular Ice" />
-            <Button layoutX="111.0" layoutY="58.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="No Ice" />
-            <Button layoutX="286.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Light Ice" />
-            <Button layoutX="286.0" layoutY="58.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Extra Ice" />
-            <Label layoutX="111.0" layoutY="114.0" text="Sweetness Choose One" />
-            <Button layoutX="111.0" layoutY="131.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="100% Sugar" />
-            <Button layoutX="111.0" layoutY="181.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="50% Sugar" />
-            <Button layoutX="111.0" layoutY="233.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="No Sugar" />
-            <Button layoutX="286.0" layoutY="131.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="80% Sugar" />
-            <Button layoutX="286.0" layoutY="181.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="30% Sugar" />
-            <Button layoutX="286.0" layoutY="233.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="120% Sugar" />
+            <Button layoutY="285.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0; -fx-background-color: white;" text="Checkout" />
+            <Button layoutX="200.0" layoutY="285.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Order History" />
+            <Button layoutX="400.0" layoutY="285.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Inventory" />
+            <Button layoutX="134.0" layoutY="2.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Regular Ice" />
+            <Button layoutX="134.0" layoutY="60.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="No Ice" />
+            <Button layoutX="309.0" layoutY="2.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Light Ice" />
+            <Button layoutX="309.0" layoutY="60.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="Extra Ice" />
+            <Label layoutX="134.0" layoutY="114.0" text="Sweetness Choose One" />
+            <Button layoutX="134.0" layoutY="133.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="100% Sugar" />
+            <Button layoutX="134.0" layoutY="183.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="50% Sugar" />
+            <Button layoutX="134.0" layoutY="235.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="No Sugar" />
+            <Button layoutX="309.0" layoutY="133.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="80% Sugar" />
+            <Button layoutX="309.0" layoutY="183.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="30% Sugar" />
+            <Button layoutX="309.0" layoutY="235.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" text="120% Sugar" />
          </children>
       </AnchorPane>
    </children>
