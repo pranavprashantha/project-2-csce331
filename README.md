@@ -8,5 +8,6 @@ JDK 21
 .\mvnw javafx:run
 
 ## For Mac
+chmod +x mvnw
 ./mvnw clean package<br>
 ./mvnw javafx:run

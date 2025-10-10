@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TrendViewController">
+   <children>
+      <Button layoutY="356.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="44.0" prefWidth="200.0" text="Checkout" />
+      <Button layoutX="200.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="44.0" prefWidth="216.0" text="Order History" />
+      <Button layoutX="415.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="44.0" prefWidth="186.0" text="Inventory" />
+      <Label layoutX="69.0" layoutY="100.0" text="Total Daily Orders" />
+      <Label layoutX="245.0" layoutY="100.0" text="Most Popular Drinks" />
+      <Label layoutX="446.0" layoutY="100.0" text="Peak Hours" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202025-10-09%20at%205.42.17%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="162.0" layoutX="219.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202025-10-09%20at%205.44.15%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="190.0" layoutX="406.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202025-10-09%20at%205.48.18%E2%80%AFPM.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="265.0" layoutY="20.0" text="Trends">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="12.0" text="Manager View">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="311.0" text="8/21/2025 - 9/21/2025" />
+   </children>
+</AnchorPane>

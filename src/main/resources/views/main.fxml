@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <GridPane prefHeight="392.0" prefWidth="700.0">
         <columnConstraints>
@@ -38,7 +38,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -62,7 +62,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -86,7 +86,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -110,7 +110,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -134,7 +134,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -158,7 +158,31 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/images/milk-tea.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fill="#d0d0d0" height="17.0" onMouseClicked="#goToModify" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -182,7 +206,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -206,7 +230,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -230,7 +254,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -254,7 +278,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -278,7 +302,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -302,7 +326,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -326,7 +350,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -350,7 +374,7 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
@@ -374,33 +398,9 @@
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@/images/milk-tea.png" />
-                           </image>
-                        </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Text>
-                     </children>
-                  </StackPane>
-                  <StackPane prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -503,9 +503,9 @@
             <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Checkout" />
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Order History" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="88.0" prefWidth="230.0" style="-fx-background-radius: 0;" text="Inventory" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#goToCheckout" prefHeight="80.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Checkout" />
+            <Button mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="78.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Order History" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#goToInventory" prefHeight="88.0" prefWidth="230.0" style="-fx-background-radius: 0;" text="Inventory" GridPane.columnIndex="2" />
          </children>
       </GridPane>
    </children>
