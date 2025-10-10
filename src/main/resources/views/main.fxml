@@ -5,20 +5,22 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <GridPane prefHeight="392.0" prefWidth="700.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="513.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="187.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="413.6666564941406" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="186.33334350585938" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -38,393 +40,441 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/milk.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classic Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
-                        </Text>
-                     </children>
-                  </StackPane>
-                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@/images/milk-tea.png" />
-                           </image>
-                        </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/coconut.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Coconut Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/milk.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jasmine Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
-                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/coconut.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chai Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/milk.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" onMouseClicked="#goToModify" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vanilla Chai Milk" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/matcha.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matcha Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/matcha.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Red Bean Matcha" StackPane.alignment="BOTTOM_CENTER">
+                           <StackPane.margin>
+                              <Insets bottom="5.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/milk.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Oolong Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/taro.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Taro Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/thai.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thai Milk Tea" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/thai.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thai Coffee Milk" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/thai.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Salt. Caramel Thai" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/honeydew.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Honeydew Milk" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/icecream.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ice Cream Coffee" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/coffee.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="House Black Coffee" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="83.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@/images/milk-tea.png" />
+                              <Image url="@../images/mocha.png" />
                            </image>
                         </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fill="#e4e4e4" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
                         </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mocha Coffee" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
-                        </Text>
-                     </children>
-                  </StackPane>
-                  <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <ImageView fitHeight="59.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@/images/milk-tea.png" />
-                           </image>
-                        </ImageView>
-                        <Rectangle fill="#d0d0d0" height="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="105.0" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
-                        </Rectangle>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Milk Tea" StackPane.alignment="BOTTOM_CENTER">
-                           <StackPane.margin>
-                              <Insets bottom="5.0" />
-                           </StackPane.margin>
+                           <font>
+                              <Font size="10.5" />
+                           </font>
                         </Text>
                      </children>
                   </StackPane>
                </children>
                <padding>
-                  <Insets bottom="10.0" />
+                  <Insets bottom="6.0" />
                </padding>
             </GridPane>
             <StackPane prefHeight="373.0" prefWidth="187.0" GridPane.columnIndex="1">
@@ -493,20 +543,12 @@
             </StackPane>
          </children>
       </GridPane>
-      <GridPane alignment="BOTTOM_CENTER" prefHeight="72.0" prefWidth="700.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="235.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="10.0" prefWidth="235.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="230.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#goToCheckout" prefHeight="80.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Checkout" />
-            <Button mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="78.0" prefWidth="235.0" style="-fx-background-radius: 0;" text="Order History" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" onAction="#goToInventory" prefHeight="88.0" prefWidth="230.0" style="-fx-background-radius: 0;" text="Inventory" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#goToCheckout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0; -fx-background-color: white;" text="Checkout" />
+            <Button layoutX="200.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Order History" />
+            <Button layoutX="400.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Inventory" />
          </children>
-      </GridPane>
+      </AnchorPane>
    </children>
 </VBox>

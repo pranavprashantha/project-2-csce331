@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TrendViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TrendViewController">
    <children>
-      <Button layoutY="356.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="44.0" prefWidth="200.0" text="Checkout" />
-      <Button layoutX="200.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="44.0" prefWidth="216.0" text="Order History" />
-      <Button layoutX="415.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="44.0" prefWidth="186.0" text="Inventory" />
+      <Button layoutY="360.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Checkout" />
+      <Button layoutX="200.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0; -fx-background-color: white;" text="Order History" />
+      <Button layoutX="400.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Inventory" />
       <Label layoutX="69.0" layoutY="100.0" text="Total Daily Orders" />
       <Label layoutX="245.0" layoutY="100.0" text="Most Popular Drinks" />
       <Label layoutX="446.0" layoutY="100.0" text="Peak Hours" />
