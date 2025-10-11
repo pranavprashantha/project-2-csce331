@@ -3,6 +3,7 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 
 public class Database {
     private final String url;
@@ -91,5 +92,33 @@ public class Database {
             System.out.println("Table was not updated: " + e.getMessage()); 
         }
     }
-
+    public ArrayList<String> employeeList() {
+        String query = "SELECT name FROM employee";
+        ArrayList<String> employees = new ArrayList<>();
+        try (Connection conn = DriverManager.getConnection(url, user, pass);
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            ResultSet resultSet = stmt.executeQuery();
+            while (resultSet.next()) {
+                employees.add(resultSet.getString("name"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error with Employee names: " + e.getMessage());
+        }
+        return employees;
+    }
+    public void addEmployee(String name, String role) {
+        String query = "INSERT INTO employee (name, role, hourly_rate) VALUES (?, ?, ?)";
+        try (Connection conn = DriverManager.getConnection(url, user, pass);
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, name);
+            stmt.setString(2, role);
+            stmt.setDouble(3, 13.00);
+            int n = stmt.executeUpdate();
+            if (n == 0) {
+                System.out.println("Employee was not updated");
+            }
+        } catch (SQLException e) {
+            System.out.println("Error with employee table: " + e.getMessage());
+        }
+    }
 }   
