@@ -1,7 +1,7 @@
-employee_id,name,role,hourly_rate
-1,Owen,barista,14.50
-2,Cemal,shift_lead,16.75
-3,Fikret,cashier,13.75
-4,Pranav,barista,14.25
-5,Dineth,manager,21.00
-6,Paul Tiele,barista,14.25
+name,role,hourly_rate
+Owen,barista,14.50
+Cemal,shift_lead,16.75
+Fikret,cashier,13.75
+Pranav,barista,14.25
+Dineth,manager,21.00
+Paul,barista,14.25
