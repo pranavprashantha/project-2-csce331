@@ -499,8 +499,8 @@
                            </GridPane.margin>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" style="-fx-font-weight: 800; -fx-background-color: lightgray;" text="Add customer" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: #63d4e0; -fx-font-weight: 800; -fx-background-radius: 1;" text="Charge" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                        <ListView prefHeight="171.0" prefWidth="173.0" style="-fx-background-color: #f4f4f4;" GridPane.rowIndex="3">
+                        <Button fx:id="chargeButton" mnemonicParsing="false" onAction="#makeOrder" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: #63d4e0; -fx-font-weight: 800; -fx-background-radius: 1;" text="Charge" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                        <ListView fx:id="orderListView" prefHeight="171.0" prefWidth="173.0" style="-fx-background-color: #f4f4f4;" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets left="7.0" right="7.0" />
                            </GridPane.margin>
@@ -522,7 +522,7 @@
                                  </rowConstraints>
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tax" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                                    <Text fx:id="taxText" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                                        <GridPane.margin>
                                           <Insets />
                                        </GridPane.margin>

@@ -1,7 +1,8 @@
 package controllers;
-
+import app.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.event.Event;              
@@ -22,11 +23,20 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
-public class MainController {
+import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
+public class MainController {
+    @FXML
+    private Button chargeButton;
+
+    @FXML
+    private Text taxText;
+
+    @FXML
     public ListView<String> orderListView; //listview fx:id is orderListView
     private final ObservableList<String> currentOrder = FXCollections.observableArrayList();
-    private final List<Integer> currentOrderPrices = new ArrayList<>();
+    private final List<Double> currentOrderPrices = new ArrayList<>();
 
 
 
@@ -42,26 +52,47 @@ public class MainController {
         switchScene(event, "/views/inventory.fxml");
     }
     public void goToModify(MouseEvent event) throws IOException {
-        Rectangle clickedRectangle = (Rectangle) event.getSource();
-        String slotId = clickedRectangle.getId(); //slot fx:ids are slot1,slot2,...
+        //switchScene(event, "/views/drinkModify.fxml");
+        System.out.println("clicked");
+        Node clickedNode = (Node) event.getSource();
+
+        String slotId = clickedNode.getId();
+        if (slotId == null && clickedNode instanceof Parent parent) {
+            for (Node child : parent.getChildrenUnmodifiable()) {
+                if (child.getId() != null) {
+                    slotId = child.getId();
+                    break;
+                }
+            }
+        }
+
+        //String slotId = clickedNode.getId(); //slot fx:ids are slot1,slot2,...
+        if (slotId == null){
+            return;
+        } 
         int id = Integer.parseInt(slotId.replace("slot", "")) - 1; //break up string to int to get id=0 for slot1, id=1 for slot2,... 
+        System.out.println("Adding drink with id: " + id);
         addToOrder(id);
-        switchScene(event, "/views/drinkModify.fxml");
+        //int id = Integer.parseInt(slotId.replace("slot", "")) - 1; //break up string to int to get id=0 for slot1, id=1 for slot2,... 
+        //addToOrder(id);
+        
         }
         
 
     //add a drink to the order.
     public void addToOrder(int id) throws IOException{
+        System.out.println(id);
         //string getDrinkName(id) to display on ListView on GUI
         //int getDrinkPrice(id) to display on ListView on GUI
-        String drinkName = getDrinkName(id);
-        int drinkPrice = getDrinkPrice(id);
-        currentOrder.add(drinkName + " - $" + drinkPrice);
+        String drinkName = App.db.getDrinkName(id);
+        double drinkPrice = App.db.getDrinkPrice(id);
+        currentOrder.add(String.format("%s - $%.2f", drinkName, drinkPrice));
         currentOrderPrices.add(drinkPrice);
 
         if (orderListView != null) {
             orderListView.setItems(currentOrder); // update listview display
         }
+        System.out.println(currentOrder);
     }
 
     //using the current order stored, calculate parameters to call completeOrder which sends to database
@@ -80,11 +111,18 @@ public class MainController {
         int week = (int) (daysBetween / 7);
 
         //get price, and string of ordered drinks
-        double totalPrice = currentOrderPrices.stream().mapToInt(Integer::intValue).sum();
+        double totalPrice = currentOrderPrices.stream().mapToDouble(Double::doubleValue).sum();
         String drinks = String.join(", ", currentOrder);
 
+        //update total and tax on GUI
+        double tax = totalPrice * 0.0825;
+        chargeButton.setText("Charge $" + String.format("%.2f", totalPrice));
+        taxText.setText("Tax: $" + String.format("%.2f", tax));
+
         //send current order to database and clear it
-        completeOrder(date, week, time, totalPrice, drinks);
+        App.db.completeOrder(date, week, time, totalPrice, drinks);
+        System.out.println("Date: " + date + ", Week: " + week + ", Time: " + time + 
+                   ", Total Price: " + totalPrice + ", Drinks: " + drinks);
         currentOrder.clear();
         currentOrderPrices.clear();
 
