@@ -43,7 +43,7 @@
             <children>
                 <Button text="Checkout"     onAction="#goToCheckout"
                         prefWidth="266" prefHeight="40" style="-fx-background-radius: 0;" />
-                <Button text="Order History" onAction="#goToOrderHistory"
+                <Button text="Manager View" onAction="#goToManagerView"
                         prefWidth="266" prefHeight="40" style="-fx-background-radius: 0;" />
                 <Button text="Inventory"    onAction="#goToInventory"
                         prefWidth="268" prefHeight="40" style="-fx-background-color: white; -fx-background-radius: 0;" />

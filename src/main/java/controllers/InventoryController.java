@@ -177,6 +177,8 @@ public class InventoryController {
     @FXML private void goToCheckout(ActionEvent e)     { switchScene(e, "/views/main.fxml"); }
     @FXML private void goToOrderHistory(ActionEvent e) { switchScene(e, "/views/Trendview.fxml"); }
     @FXML private void goToInventory(ActionEvent e)    { switchScene(e, "/views/inventory.fxml"); }
+    @FXML private void goToManagerView(ActionEvent e)    { switchScene(e, "/views/managerView.fxml"); }
+
 
 
     private void switchScene(ActionEvent e, String fxmlPath) {
