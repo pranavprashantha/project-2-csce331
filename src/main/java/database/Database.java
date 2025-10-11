@@ -3,11 +3,6 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.DriverManager;
-import java.sql.Time;
 
 public class Database {
     private final String url;
@@ -79,4 +74,22 @@ public class Database {
 
         }
     }
+
+    public void addInventory(int id) {
+        String query = "UPDATE inventory SET stock = recommended_stock WHERE id = ?";
+
+         try (Connection conn = DriverManager.getConnection(url, user, pass); PreparedStatement stmt = conn.prepareStatement(query)) {
+
+            stmt.setInt(1, id);
+            int n = stmt.executeUpdate();
+
+            if(n == 0) {
+                System.out.println("Ingredient was not found");
+            }
+
+         } catch(SQLException e) {
+            System.out.println("Table was not updated: " + e.getMessage()); 
+        }
+    }
+
 }   
