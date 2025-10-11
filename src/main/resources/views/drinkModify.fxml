@@ -12,7 +12,7 @@
          <children>
             <Rectangle fill="WHITE" height="44.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
             <Label layoutX="253.0" layoutY="14.0" text="Drink Name Price" />
-            <Button layoutX="505.0" layoutY="1.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="95.0" style="-fx-background-radius: 0; -fx-background-color: #707070; -fx-border-color: 1;" text="Add" textFill="WHITE" />
+            <Button layoutX="505.0" layoutY="1.0" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="41.0" prefWidth="95.0" style="-fx-background-radius: 0; -fx-background-color: #707070; -fx-border-color: 1;" text="Add" textFill="WHITE" />
             <Label layoutX="134.0" layoutY="56.0" text="Ice Level Choose One" />
          </children>
       </AnchorPane>

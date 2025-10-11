@@ -42,7 +42,7 @@
                <children>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -69,7 +69,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -96,7 +96,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -123,7 +123,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -150,7 +150,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -177,7 +177,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -204,7 +204,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -231,7 +231,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -258,7 +258,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -285,7 +285,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot10" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -312,7 +312,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -339,7 +339,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot12" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -366,7 +366,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot13" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -393,7 +393,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot14" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -420,7 +420,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot15" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
@@ -447,7 +447,7 @@
                   </StackPane>
                   <StackPane onMouseClicked="#goToModify" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
+                        <Rectangle fx:id="slot16" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" onMouseClicked="#goToModify" stroke="#d0d0d0" strokeType="INSIDE" width="92.0" StackPane.alignment="BOTTOM_CENTER">
                            <StackPane.margin>
                               <Insets bottom="5.0" />
                            </StackPane.margin>
