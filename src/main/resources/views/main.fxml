@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
       <GridPane prefHeight="392.0" prefWidth="700.0">
         <columnConstraints>
@@ -546,7 +546,7 @@
       <AnchorPane prefHeight="61.0" prefWidth="600.0">
          <children>
             <Button mnemonicParsing="false" onAction="#goToCheckout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0; -fx-background-color: white;" text="Checkout" />
-            <Button layoutX="200.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Order History" />
+            <Button layoutX="200.0" mnemonicParsing="false" onAction="#goToManagerView" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Manager View" />
             <Button layoutX="400.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 0;" text="Inventory" />
          </children>
       </AnchorPane>
