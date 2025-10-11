@@ -54,6 +54,7 @@ public class MainController {
     }
     public void goToModify(MouseEvent event) throws IOException {
         //switchScene(event, "/views/drinkModify.fxml");
+        taxText.setText("");
         System.out.println("clicked");
         Node clickedNode = (Node) event.getSource();
 
@@ -116,9 +117,9 @@ public class MainController {
         String drinks = String.join(", ", currentOrder);
 
         //update total and tax on GUI
-        double tax = totalPrice * 0.0825;
-        chargeButton.setText("Charge $" + String.format("%.2f", totalPrice));
-        taxText.setText("Tax: $" + String.format("%.2f", tax));
+        //double tax = totalPrice * 0.0825;
+        //chargeButton.setText("Charge $" + String.format("%.2f", totalPrice));
+        //taxText.setText("Tax: $" + String.format("%.2f", tax));
 
         //send current order to database and clear it
         App.db.completeOrder(date, week, time, totalPrice, drinks);
