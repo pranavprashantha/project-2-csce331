@@ -21,7 +21,9 @@ public class InventoryController {
     public void goToInventory(ActionEvent event) throws IOException {
         switchScene(event, "/views/inventory.fxml");
     }
-
+    public void goToManagerView(ActionEvent event) throws IOException {
+        switchScene(event, "/views/managerView.fxml");
+    }
     private void switchScene(ActionEvent event, String fxmlPath) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

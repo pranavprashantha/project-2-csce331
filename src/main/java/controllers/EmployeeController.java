@@ -1,15 +1,15 @@
 package controllers;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
 
-public class TrendViewController {
-
+public class EmployeeController {
     public void goToCheckout(ActionEvent event) throws IOException {
         switchScene(event, "/views/main.fxml");
     }
